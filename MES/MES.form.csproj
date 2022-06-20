@@ -1,0 +1,225 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{BCB81899-B346-4412-BB89-63070CB92581}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <RootNamespace>MES</RootNamespace>
+    <AssemblyName>MES</AssemblyName>
+    <TargetFrameworkVersion>v4.5.2</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+    <Deterministic>true</Deterministic>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="BouncyCastle.Crypto, Version=1.8.6.0, Culture=neutral, PublicKeyToken=0e99375e54769942, processorArchitecture=MSIL">
+      <HintPath>..\packages\Portable.BouncyCastle.1.8.6\lib\net40\BouncyCastle.Crypto.dll</HintPath>
+    </Reference>
+    <Reference Include="ICSharpCode.SharpZipLib, Version=1.2.0.246, Culture=neutral, PublicKeyToken=1b03e6acf1164f73, processorArchitecture=MSIL">
+      <HintPath>..\packages\SharpZipLib.1.2.0\lib\net45\ICSharpCode.SharpZipLib.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.VisualBasic" />
+    <Reference Include="Oracle.ManagedDataAccess, Version=4.122.1.0, Culture=neutral, PublicKeyToken=89b483f429c47342, processorArchitecture=MSIL">
+      <HintPath>..\packages\Oracle.ManagedDataAccess.12.2.1100\lib\net40\Oracle.ManagedDataAccess.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Configuration" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="DecryptForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="DecryptForm.Designer.cs">
+      <DependentUpon>DecryptForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormMain.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormMain.Designer.cs">
+      <DependentUpon>FormMain.cs</DependentUpon>
+    </Compile>
+    <Compile Include="LoginFrom.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="LoginFrom.designer.cs">
+      <DependentUpon>LoginFrom.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Login\MDI_Class.cs" />
+    <Compile Include="Login\人事\人员资料维护\employee.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Login\人事\人员资料维护\employee.Designer.cs">
+      <DependentUpon>employee.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Login\人事\人员资料维护\employee_cha.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Login\人事\人员资料维护\employee_cha.Designer.cs">
+      <DependentUpon>employee_cha.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Login\人事\部门资料维护\department.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Login\人事\部门资料维护\department.Designer.cs">
+      <DependentUpon>department.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Login\系统\系统用户权限\add_user.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Login\系统\系统用户权限\add_user.Designer.cs">
+      <DependentUpon>add_user.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Login\系统\系统用户权限\copy_user_right.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Login\系统\系统用户权限\copy_user_right.Designer.cs">
+      <DependentUpon>copy_user_right.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Login\系统\系统用户权限\rs_list.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Login\系统\系统用户权限\rs_list.Designer.cs">
+      <DependentUpon>rs_list.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Login\系统\系统用户权限\sys_user_right.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Login\系统\系统用户权限\sys_user_right.Designer.cs">
+      <DependentUpon>sys_user_right.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Login\系统\系统角色权限\role_add.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Login\系统\系统角色权限\role_add.Designer.cs">
+      <DependentUpon>role_add.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Login\系统\系统角色权限\sys_role_right.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Login\系统\系统角色权限\sys_role_right.Designer.cs">
+      <DependentUpon>sys_role_right.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Login\视图\newpassword.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Login\视图\newpassword.Designer.cs">
+      <DependentUpon>newpassword.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="DecryptForm.resx">
+      <DependentUpon>DecryptForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormMain.resx">
+      <DependentUpon>FormMain.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="LoginFrom.resx">
+      <DependentUpon>LoginFrom.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Login\人事\人员资料维护\employee.resx">
+      <DependentUpon>employee.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Login\人事\人员资料维护\employee_cha.resx">
+      <DependentUpon>employee_cha.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Login\人事\部门资料维护\department.resx">
+      <DependentUpon>department.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Login\系统\系统用户权限\add_user.resx">
+      <DependentUpon>add_user.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Login\系统\系统用户权限\copy_user_right.resx">
+      <DependentUpon>copy_user_right.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Login\系统\系统用户权限\rs_list.resx">
+      <DependentUpon>rs_list.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Login\系统\系统用户权限\sys_user_right.resx">
+      <DependentUpon>sys_user_right.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Login\系统\系统角色权限\role_add.resx">
+      <DependentUpon>role_add.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Login\系统\系统角色权限\sys_role_right.resx">
+      <DependentUpon>sys_role_right.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Login\视图\newpassword.resx">
+      <DependentUpon>newpassword.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <None Include="packages.config" />
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="Login\系统\公司基本信息\" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\DBConn\DBConn.csproj">
+      <Project>{37e11581-7a5d-4db2-ad68-7915f2b598cd}</Project>
+      <Name>DBConn</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Helper\Helper.csproj">
+      <Project>{953e9438-9604-4cfc-b97e-907a710db1fe}</Project>
+      <Name>Helper</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\MyContrals\MyContrals.csproj">
+      <Project>{16c8fc7b-5824-42c0-88ea-dc6f10a09dd4}</Project>
+      <Name>MyContrals</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\TX.Framework.WindowUI\TX.Framework.WindowUI.csproj">
+      <Project>{e8746b10-eaaf-44b7-95cc-29e4c42ec8d5}</Project>
+      <Name>TX.Framework.WindowUI</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>

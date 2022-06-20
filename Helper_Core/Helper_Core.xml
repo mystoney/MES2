@@ -1,0 +1,200 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>Helper_Core</name>
+    </assembly>
+    <members>
+        <member name="T:Helper_Core.ToAnonymousType">
+            <summary>
+            转换为匿名类
+            </summary>
+        </member>
+        <member name="M:Helper_Core.ToAnonymousType.ConvertToAnonymousType``1(System.String,``0)">
+            <summary>
+            反序列化JSON到给定的匿名对象.
+            </summary>
+            <typeparam name="T">匿名对象类型</typeparam>
+            <param name="json">json字符串</param>
+            <param name="anonymousTypeObject">匿名对象</param>
+            <returns>匿名对象</returns>
+        </member>
+        <member name="T:Helper_Core.ToDataTable">
+            <summary>
+            转换为DataTable的类
+            </summary>
+        </member>
+        <member name="M:Helper_Core.ToDataTable.ConvertToDataTable``1(System.Collections.Generic.List{``0})">
+            <summary>
+            List转换为DataTable
+            </summary>
+            <typeparam name="T">类型</typeparam>
+            <param name="items">需要转换的List</param>
+            <returns>转换完的DataTable</returns>
+        </member>
+        <member name="T:Helper_Core.ToEnum">
+            <summary>
+            转换为枚举
+            </summary>
+        </member>
+        <member name="M:Helper_Core.ToEnum.ConvertToEnum``1(System.String)">
+            <summary>
+            将字符转为枚举
+            </summary>
+            <typeparam name="T">转换成的枚举类型</typeparam>
+            <param name="s">需要转换的字符</param>
+            <returns>转化好的枚举</returns>
+        </member>
+        <member name="M:Helper_Core.ToEnum.ConvertToEnum``1(System.Int32)">
+            <summary>
+            将整数转为枚举
+            </summary>
+            <typeparam name="T">转换成的枚举类型</typeparam>
+            <param name="s">需要转换的整数</param>
+            <returns></returns>
+        </member>
+        <member name="T:Helper_Core.ToJson">
+            <summary>
+            转换为Json
+            </summary>
+        </member>
+        <member name="M:Helper_Core.ToJson.ConvertToJson``1(``0)">
+            <summary>
+            将对象转为json
+            </summary>
+            <typeparam name="T">类型</typeparam>
+            <param name="Model">需要转换的对象</param>
+            <returns>格式化好的json字符串</returns>
+        </member>
+        <member name="T:Helper_Core.ToList">
+            <summary>
+            转换为List
+            </summary>
+        </member>
+        <member name="M:Helper_Core.ToList.ConvertToList``1(System.Data.DataTable)">
+            <summary>
+            Datatable转换为List
+            </summary>
+            <typeparam name="T">要转换的类型</typeparam>
+            <param name="dt">被转换的DataTable</param>
+            <returns>转换完的List</returns>
+        </member>
+        <member name="M:Helper_Core.ToList.ConvertToList``1(System.String)">
+            <summary>
+            将json字符串转为List对象.
+            </summary>
+            <typeparam name="T">转换成List的类型</typeparam>
+            <param name="json">需要转为List的json字符串</param>
+            <returns>转换好的List对象</returns>
+        </member>
+        <member name="T:Helper_Core.ToObject">
+            <summary>
+            转换为对象
+            </summary>
+        </member>
+        <member name="M:Helper_Core.ToObject.ConvertToObject``1(System.String)">
+            <summary>
+            解析JSON字符串生成对象实体
+            </summary>
+            <typeparam name="T">对象类型</typeparam>
+            <param name="json">json字符串(eg.{"ID":"112","Name":"石子儿"})</param>
+            <returns>对象实体</returns>
+        </member>
+        <member name="T:Helper_Core.DeEncrypt.DeEncrypt">
+            <summary>
+            加解密
+            </summary>
+        </member>
+        <member name="M:Helper_Core.DeEncrypt.DeEncrypt.EncryptDES(System.String,System.String)">
+            <summary> 
+            DES加密字符串 
+            </summary> 
+            <param name="encryptString">待加密的字符串</param> 
+            <param name="encryptKey">加密密钥,要求为8位</param> 
+            <returns>加密成功返回加密后的字符串，失败返回源串</returns> 
+        </member>
+        <member name="M:Helper_Core.DeEncrypt.DeEncrypt.DecryptDES(System.String,System.String)">
+            <summary> 
+            DES解密字符串 
+            </summary> 
+            <param name="decryptString">待解密的字符串</param> 
+            <param name="decryptKey">解密密钥,要求为8位,和加密密钥相同</param> 
+            <returns>解密成功返回解密后的字符串，失败返源串</returns> 
+        </member>
+        <member name="T:Helper_Core.DownLoadFile.HttpDownLoadFile">
+            <summary>
+            http下载文件的类
+            </summary>
+        </member>
+        <member name="M:Helper_Core.DownLoadFile.HttpDownLoadFile.HttpDownloadFile(System.String,System.String)">
+            <summary>
+            Http下载文件
+            </summary>
+        </member>
+        <member name="T:Helper_Core.Extension">
+            <summary>
+            扩展类
+            </summary>
+        </member>
+        <member name="M:Helper_Core.Extension.CheckNull``1(System.Collections.Generic.IEnumerable{``0})">
+            <summary>
+            检查List是不是为空
+            </summary>
+            <typeparam name="T">所有继承IEnumerable的类型</typeparam>
+            <param name="list">要检查的List</param>
+            <returns>如果为空则返回的List，否则返回原来的List</returns>
+        </member>
+        <member name="T:Helper_Core.Http.Http">
+            <summary>
+            Http调用类
+            </summary>
+        </member>
+        <member name="M:Helper_Core.Http.Http.HttpGet(System.String)">
+            <summary>
+            GET方式调用
+            </summary>
+            <param name="url">访问的URL</param>
+            <returns>HTTP回传的字符串</returns>
+        </member>
+        <member name="M:Helper_Core.Http.Http.HttpPost(System.String,System.String,System.String,System.String)">
+            <summary>
+            调用HTTP方式的接口
+            </summary>
+            <param name="url">访问的URL</param>
+            <param name="data">要传递的数据的字符串</param>
+            <param name="SetMethod">发送的模式（PUT，POST）</param>
+            <param name="userAndPassword">用户名加密码中间用:隔开,如果没有请输入""</param>
+            <returns>HTTP回传的字符串</returns>
+        </member>
+        <member name="T:Helper_Core.mail.MyEmail">
+            <summary>
+            发送邮件的类
+            </summary>
+        </member>
+        <member name="M:Helper_Core.mail.MyEmail.#ctor(System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.Boolean,System.Boolean)">
+            <summary>
+             构造函数
+            </summary>
+            <param name="server">发件箱的邮件服务器地址</param>
+            <param name="toMail">收件人地址（可以是多个收件人，程序中是以“,"进行区分的）</param>
+            <param name="fromMail">发件人地址</param>
+            <param name="subject">邮件标题</param>
+            <param name="emailBody">邮件内容（可以以html格式进行设计）</param>
+            <param name="username">发件箱的用户名（即@符号前面的字符串，例如：hello@163.com，用户名为：hello）</param>
+            <param name="password">发件人邮箱密码</param>
+            <param name="port">发送邮件所用的端口号（htmp协议默认为25）</param>
+            <param name="sslEnable">true表示对邮件内容进行socket层加密传输，false表示不加密</param>
+            <param name="pwdCheckEnable">true表示对发件人邮箱进行密码验证，false表示不对发件人邮箱进行密码验证</param>
+        </member>
+        <member name="M:Helper_Core.mail.MyEmail.AddAttachments(System.String)">
+            <summary>
+             添加附件
+            </summary>
+            <param name="attachmentsPath">附件的路径集合，以分号分隔</param>
+        </member>
+        <member name="M:Helper_Core.mail.MyEmail.Send">
+            <summary>
+             邮件的发送
+            </summary>
+        </member>
+    </members>
+</doc>
