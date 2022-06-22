@@ -81,15 +81,6 @@
     <Compile Include="SchemeBll.cs" />
     <Compile Include="StationBll.cs" />
     <Compile Include="StyleBll.cs" />
-    <Compile Include="Tmp_ZTMTM_COMCTRLBLL.cs" />
-    <Compile Include="Tmp_ZTMTM_COMOPTBLL.cs" />
-    <Compile Include="Tmp_ZTMTM_COMRELBLL.cs" />
-    <Compile Include="ZAFPOBLL.cs" />
-    <Compile Include="ZBTDATABLL.cs" />
-    <Compile Include="ZCADMABLL.cs" />
-    <Compile Include="ZCLSXBLL.cs" />
-    <Compile Include="ZMTMAUFBLL.cs" />
-    <Compile Include="ZMTMFILLBLL.cs" />
     <Compile Include="FromZYQ\T_Style.cs" />
     <Compile Include="FromZYQ\T_Style_Item.cs" />
     <Compile Include="FromZYQ\T_Style_Item_Option.cs" />

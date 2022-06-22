@@ -60,15 +60,6 @@
     <Compile Include="SchemeDal\SchemeDal.cs" />
     <Compile Include="StationDal\StationDal.cs" />
     <Compile Include="StyleDal\StyleDal.cs" />
-    <Compile Include="Tmp_ZTMTM_COMCTRLDAL\Tmp_ZTMTM_COMCTRLDAL.cs" />
-    <Compile Include="Tmp_ZTMTM_COMOPTDAL\Tmp_ZTMTM_COMOPTDAL.cs" />
-    <Compile Include="Tmp_ZTMTM_COMRELDAL\Tmp_ZTMTM_COMRELDAL.cs" />
-    <Compile Include="ZAFPODal\ZAFPODal.cs" />
-    <Compile Include="ZBTDATADal\ZBTDATADal.cs" />
-    <Compile Include="ZCADMADal\ZCADMADal.cs" />
-    <Compile Include="ZCLSXDal\ZCLSXDal.cs" />
-    <Compile Include="ZMTMAUFDal\ZMTMAUFDal.cs" />
-    <Compile Include="ZMTMFILLDal\ZMTMFILLDal.cs" />
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
       <LastGenOutput>Resources.Designer.cs</LastGenOutput>
